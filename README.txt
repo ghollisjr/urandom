@@ -12,3 +12,9 @@ Example usage:
 ;; note: nbits only needed for first call, but safe to include in
 ;; future calls.
 
+
+NOTE: This aims to be a cross-platform library but at the moment only:
+
+* SBCL
+
+are supported.

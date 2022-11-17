@@ -24,6 +24,7 @@
   "Make sure that *state* is initialized, and use nbits to init if not."
   (when (not *state*)
     (setf *state*
+          #+sbcl
           (sb-ext:seed-random-state
            (urandom-seed nbits)))))
 
